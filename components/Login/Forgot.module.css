@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.formCustom {
+  margin: 0 2rem;
+  position: relative; /* Adiciona posição relativa ao contêiner do formulário */
+}
+
+.orangeBox {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 20px; /* Ajuste conforme necessário */
+  height: 20px; /* Ajuste conforme necessário */
+  background-color: orange;
+  z-index: -1; /* Define o z-index para colocar atrás do texto */
+}

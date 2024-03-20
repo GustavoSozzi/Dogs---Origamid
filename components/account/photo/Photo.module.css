@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Spectral:wght@700&display=swap");
+
+
+
+.container {
+  max-width: 50rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; /* Alteração para empilhar os itens verticalmente */
+}
+
+
+.mainContainer {
+  margin-top: 2rem;
+}

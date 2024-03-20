@@ -1,0 +1,56 @@
+.photo:nth-child(2) {
+  grid-column: 2 / 4;
+  grid-row: span 2;
+}
+
+@media (max-width: 40rem) {
+  .photo:nth-child(2) {
+    grid-column: initial;
+    grid-row: initial;
+  }
+}
+
+img{
+  width: 100%;
+}
+
+.photo {
+  position: relative; /* Adicione position: relative para tornar .photo um contêiner de posicionamento para a visualização */
+  display: grid;
+  border-radius: 0.2rem;
+  overflow: hidden;
+  cursor: pointer;
+  width: 100%;
+}
+
+.photo img {
+  grid-area: 1/1;
+}
+
+.visualizacao {
+  position: absolute; /* Use position: absolute para posicionar a visualização em relação à .photo */
+  top: 0;
+  left: 0;
+  width: 100%; /* Ajuste a largura para ocupar todo o espaço da .photo */
+  height: 100%; /* Ajuste a altura para ocupar todo o espaço da .photo */
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.visualizacao::before {
+  width: 16px;
+  height: 10px;
+  content: "";
+  display: inline-block;
+  margin-right: 0.25rem;
+  background: url("../../../img/svg/visualizacao.svg") no-repeat;
+}
+
+.photo:hover .visualizacao {
+  display: flex;
+}

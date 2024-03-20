@@ -1,0 +1,38 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  padding-top: 4rem;
+  color: #333;
+  --type-first: Helvetica, Arial, sans-serif;
+  --type-second: "Spectral", Georgia;
+  font-family: var(--type-first);
+}
+
+.container {
+  max-width: 50rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.account{
+  border: 1px solid black;
+  margin-right: 2rem;
+}
+
+.Estatisticas:hover,
+.Estatisticas:focus
+{
+  outline: none;
+  box-shadow: 0 0 0 3px #fea, 0 0 0 4px #fb1;
+}
+
+.header{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  position: relative;
+}
