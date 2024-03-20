@@ -1,5 +1,5 @@
 <div align='center'>
-<img src='./logo_readme.png'>
+
 
 <div>
     <img src="https://img.shields.io/github/repo-size/GustavoSozzi/Dogs---Origamid">
